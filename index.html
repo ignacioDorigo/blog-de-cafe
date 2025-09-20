@@ -20,8 +20,16 @@
   </noscript>
 
 
-  <link rel="preload" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- <link rel="preload" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/normalize.css" /> -->
+
+  <!-- 2) Hoja completa NO bloqueante -->
+  <link rel="preload" href="/css/normalize.css" as="style">
+  <link rel="stylesheet" href="/css/normalize.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="/css/normalize.css">
+  </noscript>
+
 
   <link rel="preload" href="css/styles.css">
   <link rel="stylesheet" href="css/styles.css">
