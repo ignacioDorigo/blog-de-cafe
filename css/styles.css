@@ -278,12 +278,13 @@ ul {
 
 @media (min-width: 768px) {
   .sobre-nosotros {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    flex-direction: row;
     gap: 2rem;
   }
 
-  .sobre-nosotros__img{
-   width: 100%;
+  .sobre-nosotros__img,.sobre-nosotros__texto{
+    flex-basis: 50%;
   }
 }
+

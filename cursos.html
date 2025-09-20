@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Sitio de Cafe" />
+    <meta name="author" content="Ignacio Dorigo" />
+    <meta name="keywords" content="Cafe, Blog, Cursos" />
+
+    <!-- Fuente de google fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&subset=latin"
+        as="style" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&subset=latin" media="print"
+        onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&subset=latin" />
+    </noscript>
+
+    <link rel="preload" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link rel="preload" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Para Android (Chrome, Edge, Opera, etc.) -->
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Para iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <title>Blog de Cafe</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre">
+                        Blog<span class="logo__bold">DeCafe</span>
+                    </h1>
+                </a>
+                <!-- Enlaces -->
+                <nav class="navegacion">
+                    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                    <a class="navegacion__enlace" href="cursos.html">Cursos</a>
+                    <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de Café con consejos y cursos</h2>
+            <p class="no-margin">
+                Aprende de los mejores expertos con las mejores recetas y consejos
+            </p>
+        </div>
+    </header>
+    <main class="contenedor">
+        <h3 class="centrar-texto">Nuestros próximos Cursos y Talleres</h3>
+
+        <!-- Inicio del curso 1 -->
+        <div class="curso">
+            <div class="curso__img">
+                <img src="img/curso1.webp" alt="Imagen de Curso 1" fetchpriority="high" />
+            </div>
+            <div class="curso__informacion">
+                <h4 class="no-margin">Técnicas de extracción de café</h4>
+                <p class="curso__label">
+                    <span class="curso__info--bold">Precio:</span>$35.000 (ARS)
+                </p>
+                <p class="curso__label">
+                    <span class="curso__info--bold">Cupo:</span>30
+                </p>
+                <p class="curso__descripcion">
+                    Descubre los distintos métodos de extracción como prensa francesa, V60, AeroPress y espresso. 
+                    Aprenderás cómo la molienda, temperatura y tiempo influyen en el sabor final, logrando la taza 
+                    perfecta en cada preparación.
+                </p>
+            </div>
+        </div>
+        <!-- Fin del curso 1 -->
+
+        <!-- Inicio del curso 2 -->
+        <div class="curso">
+            <div class="curso__img">
+                <img src="img/curso2.webp" alt="Imagen de Curso 2" loading="lazy" />
+            </div>
+            <div class="curso__informacion">
+                <h4 class="no-margin">Taller para moler y tostar granos</h4>
+                <p class="curso__label">
+                    <span class="curso__info--bold">Precio:</span>$35.000 (ARS)
+                </p>
+                <p class="curso__label">
+                    <span class="curso__info--bold">Cupo:</span>30
+                </p>
+                <p class="curso__descripcion">
+                    Aprende el arte del tostado y la molienda para resaltar las notas 
+                    aromáticas de cada grano. Desde perfiles suaves y frutales hasta 
+                    sabores intensos y achocolatados, descubrirás cómo transformar 
+                    el café desde su origen hasta la taza.
+                </p>
+            </div>
+        </div>
+        <!-- Fin del curso 2 -->
+
+        <!-- Inicio del curso 3 -->
+        <div class="curso">
+            <div class="curso__img">
+                <img src="img/curso3.webp" alt="Imagen de Curso 3" loading="lazy" />
+            </div>
+            <div class="curso__informacion">
+                <h4 class="no-margin">4 recetas de café para principiantes</h4>
+                <p class="curso__label">
+                    <span class="curso__info--bold">Precio:</span>$35.000 (ARS)
+                </p>
+                <p class="curso__label">
+                    <span class="curso__info--bold">Cupo:</span>30
+                </p>
+                <p class="curso__descripcion">
+                    Ideal para quienes dan sus primeros pasos en el mundo del café. 
+                    Te enseñaremos a preparar recetas clásicas como el capuchino, 
+                    moka, latte y café frío, con técnicas simples para que disfrutes 
+                    en casa como un verdadero barista.
+                </p>
+            </div>
+        </div>
+        <!-- Fin del curso 3 -->
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre">
+                        Blog<span class="logo__bold">DeCafe</span>
+                    </h1>
+                </a>
+                <!-- Enlaces -->
+                <nav class="navegacion">
+                    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                    <a class="navegacion__enlace" href="cursos.html">Cursos</a>
+                    <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
