@@ -70,4 +70,11 @@ img{max-width: 100%;}
     text-align: center;
 }
 
+.header{
+    background-image: url(../img/banner.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
 
