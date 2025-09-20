@@ -69,7 +69,10 @@
             <div class="carousel__viewport">
                 <ul class="carousel__track">
                     <li class="carousel__slide is-current" aria-roledescription="slide" aria-label="1 de 3">
-                        <img src="img/entrada.webp" alt="Granos de café tostados" fetchpriority="high">
+                        <img src="img/entrada-1920.webp"
+                            srcset="img/entrada-768.webp 768w, img/entrada-1200.webp 1200w, img/entrada-1920.webp 1920w"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1920px"
+                            alt="Granos de café tostados" loading="lazy" fetchpriority="high">
                     </li>
                     <li class="carousel__slide" aria-roledescription="slide" aria-label="2 de 3">
                         <img src="img/curso1.webp" alt="Espresso servido en taza" loading="lazy">

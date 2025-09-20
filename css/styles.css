@@ -410,3 +410,75 @@ ul {
         --h: 40vh;
     }
 }
+
+/* ====== Estilos modernos para la sección de texto ====== */
+.entrada__texto {
+    --accent: var(--primario);
+    background: var(--blanco);
+    border: 1px solid var(--grisClaro);
+    border-radius: 1.2rem;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, .06);
+    padding: 3rem 2rem;
+    margin-block: 4rem;
+}
+
+/* Mejor tipografía y ritmo vertical */
+.entrada__texto p {
+    font-size: 1.8rem;
+    line-height: 1.9;
+    max-width: 75ch;
+    /* ancho de lectura cómodo */
+    margin: 1.2rem 0 0;
+    text-wrap: pretty;
+}
+
+/* Subtítulos con acento moderno */
+.entrada__texto h3 {
+    font-weight: 700;
+    font-size: clamp(2.2rem, 2vw + 1rem, 3rem);
+    letter-spacing: .2px;
+    margin: 2.4rem 0 .8rem;
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+    text-wrap: balance;
+    /* evita saltos feos en títulos largos */
+}
+
+.entrada__texto h3::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--accent), #000000);
+    opacity: .6;
+}
+
+/* Espaciados más finos entre título y primer párrafo */
+.entrada__texto h3+p {
+    margin-top: .4rem;
+}
+
+/* Responsivo: tipografía un poco más grande en pantallas amplias */
+@media (min-width: 992px) {
+    .entrada__texto {
+        padding: 4rem 5rem;
+    }
+
+    .entrada__texto p {
+        font-size: 1.9rem;
+        line-height: 2;
+    }
+}
+
+/* Modo oscuro opcional si alguna vez lo activás por clase en <body> */
+body.dark .entrada__texto {
+    background: #111;
+    border-color: #222;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, .4);
+}
+
+body.dark .entrada__texto h3::after {
+    opacity: .9;
+}
