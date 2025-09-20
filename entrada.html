@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Sitio de Cafe" />
+    <meta name="author" content="Ignacio Dorigo" />
+    <meta name="keywords" content="Cafe, Blog, Cursos" />
+
+    <!-- Fuente de google fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&subset=latin"
+        as="style" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&subset=latin" media="print"
+        onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&subset=latin" />
+    </noscript>
+
+    <link rel="preload" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link rel="preload" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Para Android (Chrome, Edge, Opera, etc.) -->
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Para iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <title>Blog de Cafe</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre">
+                        Blog<span class="logo__bold">DeCafe</span>
+                    </h1>
+                </a>
+                <!-- Enlaces -->
+                <nav class="navegacion">
+                    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                    <a class="navegacion__enlace" href="cursos.html">Cursos</a>
+                    <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de Café con consejos y cursos</h2>
+            <p class="no-margin">
+                Aprende de los mejores expertos con las mejores recetas y consejos
+            </p>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="carousel" aria-roledescription="carousel" aria-label="Galería de café">
+            <button class="carousel__btn prev" aria-label="Anterior">‹</button>
+
+            <div class="carousel__viewport">
+                <ul class="carousel__track">
+                    <li class="carousel__slide is-current" aria-roledescription="slide" aria-label="1 de 3">
+                        <img src="img/entrada.webp" alt="Granos de café tostados" fetchpriority="high">
+                    </li>
+                    <li class="carousel__slide" aria-roledescription="slide" aria-label="2 de 3">
+                        <img src="img/curso1.webp" alt="Espresso servido en taza" loading="lazy">
+                    </li>
+                    <li class="carousel__slide" aria-roledescription="slide" aria-label="3 de 3">
+                        <img src="img/curso3.webp" alt="Latte art en forma de corazón" loading="lazy">
+                    </li>
+                </ul>
+            </div>
+
+            <button class="carousel__btn next" aria-label="Siguiente">›</button>
+            <div class="carousel__dots" role="tablist" aria-label="Paginación del carrusel"></div>
+        </section>
+
+        <div class="entrada__texto contenedor">
+            <h3>Nuestra filosofía</h3>
+            <p>
+                El café es mucho más que una simple bebida: es un ritual que acompaña nuestras
+                rutinas, une a las personas y despierta los sentidos. Desde su aroma inconfundible
+                hasta la calidez de una taza compartida, el café invita a hacer una pausa y disfrutar
+                del presente. Creemos que cada taza encierra una historia que conecta orígenes,
+                tradiciones y emociones.
+            </p>
+
+            <h3>Comunidad cafetera</h3>
+            <p>
+                Nuestro blog nació con el propósito de crear un espacio donde los amantes del café
+                puedan encontrarse, aprender y compartir experiencias. Aquí publicamos artículos,
+                reseñas de cafeterías, entrevistas con expertos y consejos prácticos para que cada
+                lector se sienta parte de una comunidad que valora la calidad y la curiosidad por
+                descubrir nuevas formas de disfrutar del café.
+            </p>
+
+            <h3>Cursos y talleres</h3>
+            <p>
+                Sabemos que disfrutar de un buen café no termina en la taza, sino en todo el proceso
+                que hay detrás. Por eso ofrecemos cursos y talleres que abarcan desde lo básico —
+                cómo elegir los granos, molerlos y prepararlos en casa— hasta técnicas avanzadas
+                de barismo y cata profesional. Queremos que cada persona tenga las herramientas
+                necesarias para vivir el café con mayor profundidad.
+            </p>
+
+            <h3>Un universo por descubrir</h3>
+            <p>
+                Para nosotros, el café es cultura, es experiencia y es pasión. Nuestro compromiso
+                es acompañarte en este viaje y demostrar que detrás de cada grano hay un mundo
+                fascinante por explorar. Te invitamos a recorrerlo con nosotros y a encontrar
+                en cada taza una nueva oportunidad de inspiración y disfrute.
+            </p>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre">
+                        Blog<span class="logo__bold">DeCafe</span>
+                    </h1>
+                </a>
+                <!-- Enlaces -->
+                <nav class="navegacion">
+                    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                    <a class="navegacion__enlace" href="cursos.html">Cursos</a>
+                    <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
