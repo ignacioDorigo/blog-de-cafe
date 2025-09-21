@@ -30,7 +30,7 @@
     <meta name="theme-color" content="#000000" />
 
     <!-- Para iOS Safari -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
     <title>Blog de Cafe</title>
@@ -69,16 +69,23 @@
         <form action="" class="formulario">
             <div class="campo">
                 <label class="form__label" for="nombre">Nombre</label>
-                <input class="form__input" type="text" placeholder="Nombre" id="nombre">
+                <div class="div__form--input">
+                    <input class="form__input" type="text" placeholder="Nombre" id="nombre">
+                </div>
             </div>
             <div class="campo">
+
                 <label class="form__label" for="email">Email</label>
-                <input class="form__input" type="email" placeholder="Email" id="email">
+                <div class="div__form--input">
+                    <input class="form__input" type="email" placeholder="Email" id="email">
+                </div>
             </div>
 
             <div class="campo">
                 <label class="form__label" for="mensaje">Mensaje</label>
-                <textarea class="form__input" name="mensaje" placeholder="Mensaje" id="mensaje"></textarea>
+                <div class="div__form--input">
+                    <textarea class="form__input" name="mensaje" placeholder="Mensaje" id="mensaje"></textarea>
+                </div>
             </div>
 
             <input class="boton" type="submit" value="Enviar">
@@ -105,7 +112,7 @@
         </div>
     </footer>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
