@@ -170,6 +170,7 @@ formulario.addEventListener("submit", function (eventoActual) {
     mensajeEnviadoExitoso.textContent = "FORMULARIO ENVIADO CORRECTAMENTE";
     formulario.appendChild(mensajeEnviadoExitoso);
     alert("Formulario enviado");
+    formulario.reset();
   }
 });
 

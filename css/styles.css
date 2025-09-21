@@ -316,17 +316,13 @@ ul {
     }
 }
 
-/* Banner full-width */
 .carousel {
     --h: 70vh;
-    /* alto del hero */
     position: relative;
     width: 100%;
     margin: 0;
 }
 
-/* Si el carrusel vive dentro de un contenedor con padding o max-width,
-   esta clase "full-bleed" lo hace sangrar a todo el viewport */
 .carousel.full-bleed {
     width: 100vw;
     margin-left: 50%;
@@ -338,7 +334,6 @@ ul {
     width: 100%;
     height: var(--h);
     overscroll-behavior-x: contain;
-    /* sin rebote lateral */
 }
 
 .carousel__track {
